@@ -25,8 +25,6 @@ api = Api(app, errors=collective_errors)        # Initializing API
 
 initialize_routes(api)      # Initializing routes
 
-app.config["JWT_ALGORITHM"] = "HS256"
-
 bcrypt = Bcrypt(app)        # Bcrypt initializing (authorization)
 jwt = JWTManager(app)       # JWT initializing (authorization)
 
